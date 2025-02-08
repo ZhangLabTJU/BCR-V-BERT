@@ -22,9 +22,14 @@ $ conda create -n myenv python=3.9
 $ conda activate myenv
 ```
 
-To use BCR-V-BERT, you can clone this repository and install the package locally:
+To use BCR-V-BERT, install via pip:
 ```bash
-$ git clone git@github.com/ZhangLabTJU/BCR-V_BERT/main
+python setup.py install
+```
+
+Alternatively, you can clone this repository and install the package locally:
+```bash
+$ git clone git@github.com:  添加github网站
 $ python setup.py install
 ```
 
@@ -42,7 +47,6 @@ $ python setup.py install
 BCR-V-BERT can be used in different ways and for a variety of usecases.
     
 - Embeddings: Generates sequence embeddings. The output is a list of embedding tensors, where each tensor is the embedding for the corresponding sequence. Each embedding has dimension `[(Length + 2) x 768]`.
-- Sequence generation probability: Calculation sequence log likelihood as generation probability.
     
 ```python
 from BCR_V_BERT import BCR_V_BERT_Runner

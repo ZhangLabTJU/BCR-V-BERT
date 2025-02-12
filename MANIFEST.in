@@ -1,0 +1,3 @@
+recursive-include BCR_V_BERT/model_pretrained *
+recursive-include example *
+include requirements.txt

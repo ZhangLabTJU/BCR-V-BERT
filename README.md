@@ -17,30 +17,20 @@ Official repository for BCR-V-BERT, an antibody-specific transformer language mo
 
 To download our code, we recommend creating a clean conda environment with python v3.9, and you will also need to install PyTorch v2.0.0.
 
+To use BCR-V-BERT, you can clone this repository and install the package locally:
 ```bash
-$ conda create -n myenv python=3.9
-$ conda activate myenv
-```
-
-To use BCR-V-BERT, install via pip:
-```bash
-python setup.py install
-```
-
-Alternatively, you can clone this repository and install the package locally:
-```bash
-$ git clone git@github.com:  添加github网站
+$ git clone git@github.com/ZhangLabTJU/BCR-V_BERT/main
 $ python setup.py install
 ```
 
 ## Available models
 
 | Model | Dataset | Epoch | Description |
-|-------|------------------------------------------------------------|-----|---------------|
-| cdrh  | 372,028,240 antibody cdrh1,2,3 sequences from OAS database | 0.1 | Heavy chain cdr pretrained model |
-| cdrh3 | 372,028,240 antibody cdrh3 sequences from OAS database     | 0.1 | Heavy chain cdr3 pretrained model |
-| cdrl  | 3,705,441 antibody cdrl1,2,3 sequences from OAS database   | 5   | Light chain cdr pretrained model |
-| cdrl3 | 3,705,441 antibody cdrl3 from OAS database                 | 5   | Light chain cdr3 pretrained model |
+|-------|------------------------------------------------------------|------|---------------|
+| cdrh  | 372,028,240 antibody cdrh1,2,3 sequences from OAS database | 0.15 | Heavy chain cdr pretrained model |
+| cdrh3 | 372,028,240 antibody cdrh3 sequences from OAS database     | 0.15 | Heavy chain cdr3 pretrained model |
+| cdrl  | 3,705,441 antibody cdrl1,2,3 sequences from OAS database   | 20   | Light chain cdr pretrained model |
+| cdrl3 | 3,705,441 antibody cdrl3 from OAS database                 | 20   | Light chain cdr3 pretrained model |
 
 ## Usage
 

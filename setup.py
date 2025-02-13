@@ -8,7 +8,7 @@ class CustomInstallCommand(install):
     """Customized install command to download models."""
     def run(self):
         install.run(self)
-        repo_url = "https://huggingface.co/xqh/vbert"
+        repo_url = "https://huggingface.co/xqh/BCR-V-BERT"
         destination_dir = path.join(here, "BCR_V_BERT/model_pretrained")
         
         print("Starting to download the model repository...")

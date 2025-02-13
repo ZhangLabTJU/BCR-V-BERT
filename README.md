@@ -19,7 +19,7 @@ To download our code, we recommend creating a clean conda environment with pytho
 
 To use BCR-V-BERT, you can clone this repository and install the package locally:
 ```bash
-$ git clone git@github.com/ZhangLabTJU/BCR-V_BERT/main
+$ git clone https://user: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@github.com/ZhangLabTJU/BCR-V-BERT.git
 $ python setup.py install
 ```
 ### Pre-trained models

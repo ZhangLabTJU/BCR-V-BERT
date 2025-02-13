@@ -16,6 +16,10 @@ Official repository for BCR-V-BERT, an antibody-specific transformer language mo
 ### Environment
 
 To download our code, we recommend creating a clean conda environment with python v3.9, and you will also need to install PyTorch v2.0.0.
+```bash
+conda create --name public-env python=3.9
+conda activate public-env
+```
 
 To use BCR-V-BERT, you can clone this repository and install the package locally:
 ```bash

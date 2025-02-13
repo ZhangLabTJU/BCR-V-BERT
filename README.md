@@ -22,6 +22,20 @@ To use BCR-V-BERT, you can clone this repository and install the package locally
 $ git clone git@github.com/ZhangLabTJU/BCR-V_BERT/main
 $ python setup.py install
 ```
+### Pre-trained models
+
+The pre-trained model for this project is hosted on Hugging Face at xqh/BCR-V-BERT(https://huggingface.co/xqh/BCR-V-BERT). When you follow the standard installation process, the system will automatically clone the pre-trained model from Hugging Face into the BCR_V_BERT/model_pretrained directory.
+
+During the installation process by using setup.py, the installation script will automatically handle the downloading and configuration of the pre-trained model. If everything proceeds smoothly, no additional actions are required from your side.
+
+If the automatic cloning step fails to complete successfully, please manually clone the pre-trained model to the designated directory:
+
+```bash
+git clone https://huggingface.co/xqh/vbert BCR_V_BERT/model_pretrained
+```
+
+Verify that the files have been successfully downloaded to the BCR_V_BERT/model_pretrained directory.
+
 
 ## Available models
 

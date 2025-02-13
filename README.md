@@ -24,7 +24,7 @@ $ python setup.py install
 ```
 ### Pre-trained models
 
-The pre-trained model for this project is hosted on Hugging Face at xqh/BCR-V-BERT(https://huggingface.co/xqh/BCR-V-BERT). When you follow the standard installation process, the system will automatically clone the pre-trained model from Hugging Face into the BCR_V_BERT/model_pretrained directory.
+The pre-trained model for this project is hosted on Hugging Face at [xqh/BCR-V-BERT](https://huggingface.co/xqh/BCR-V-BERT). When you follow the standard installation process, the system will automatically clone the pre-trained model from Hugging Face into the BCR_V_BERT/model_pretrained directory.
 
 During the installation process by using setup.py, the installation script will automatically handle the downloading and configuration of the pre-trained model. If everything proceeds smoothly, no additional actions are required from your side.
 

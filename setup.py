@@ -1,7 +1,20 @@
 from os import path
 from setuptools import setup, find_packages
+from setuptools.command.install import install
+from BCR_V_BERT.utils.download_model import clone_huggingface_repo
 
 here = path.abspath(path.dirname(__file__))
+class CustomInstallCommand(install):
+    """Customized install command to download models."""
+    def run(self):
+        install.run(self)
+        repo_url = "https://huggingface.co/xqh/vbert"
+        destination_dir = path.join(here, "BCR_V_BERT/model_pretrained")
+        
+        print("Starting to download the model repository...")
+        clone_huggingface_repo(repo_url, destination_dir)
+        print("Model repository downloaded successfully.")
+
 with open(path.join(here, 'requirements.txt'), 'r', encoding='utf-8') as f:
     all_reqs = f.read().split('\n')
 
@@ -22,6 +35,9 @@ setup(
     license='CC BY-NC-SA 4.0',
     include_package_data=True, 
     packages=find_packages(),  
+    cmdclass={
+        'install': CustomInstallCommand,
+    },
     install_requires=install_requires, 
     classifiers=[
         'License :: OSI Approved :: CC BY-NC-SA 4.0',

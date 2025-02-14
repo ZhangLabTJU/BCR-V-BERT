@@ -23,6 +23,7 @@ To use BCR-V-BERT, you can clone this repository and install the package locally
 ```bash
 $ git clone https://user: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@github.com/ZhangLabTJU/BCR-V-BERT.git
 $ cd BCR-V-BERT/
+$ pip install -r requirements.txt
 $ python setup.py install
 ```
 ### Pre-trained models
@@ -34,7 +35,7 @@ During the installation process by using setup.py, the installation script will 
 If the automatic cloning step fails to complete successfully, please manually clone the pre-trained model to the designated directory:
 
 ```bash
-git clone https://huggingface.co/xqh/vbert BCR_V_BERT/model_pretrained
+$ git clone https://huggingface.co/xqh/vbert BCR_V_BERT/model_pretrained
 ```
 
 Verify that the files have been successfully downloaded to the BCR_V_BERT/model_pretrained directory.

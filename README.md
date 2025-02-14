@@ -1,15 +1,13 @@
 # BCR-V-BERT: Antibody language model based on BERT fused V gene
 
-## License
-
-Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) (see License file).
-This software is not to be used for commerical purposes.
-
-Commercial users/for profit organisations can obtain a license from Cambridge Enterprise.
-
 ## Overview
 
 Official repository for BCR-V-BERT, an antibody-specific transformer language model pre-trained separately on 372M antibody heavy sequences and 3M antibody light sequences. The model can embed the CDR3 or CDR sequences of light and heavy chain antibodies.
+
+## License
+
+Attribution-NonCommercial-ShareAlike 4.0 International (CC BY-NC-SA 4.0) (see License file).
+This software is not to be used for commercial purposes.
 
 ## Setup
 
@@ -24,6 +22,7 @@ conda activate public-env
 To use BCR-V-BERT, you can clone this repository and install the package locally:
 ```bash
 $ git clone https://user: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@github.com/ZhangLabTJU/BCR-V-BERT.git
+$ cd BCR-V-BERT/
 $ python setup.py install
 ```
 ### Pre-trained models

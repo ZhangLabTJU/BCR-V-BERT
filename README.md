@@ -69,5 +69,9 @@ vgene = 'IGHV1-52'
 # Embeddings
 cdrh_embeddings = cdrh_model.embed([cdrh1_seq+'|'+cdrh2_seq+'|'+cdrh3_seq],[vgene])
 cdrh3_embeddings = cdrh3_model.embed([cdrh3_seq],[vgene])
+```
 
 ## Citing this work
+If you use BCR-V-BERT in your research, please cite our work as follows:
+
+[Add citation details here]

@@ -8,7 +8,6 @@ here = path.abspath(path.dirname(__file__))
 class CustomInstallCommand(install):
     """Customized install command to download models."""
     def run(self) -> None:
-        super().run()
         repo_url = "https://huggingface.co/xqh/BCR-V-BERT"
         destination_dir = path.join(here, "BCR_V_BERT/model_pretrained")
         
@@ -18,6 +17,7 @@ class CustomInstallCommand(install):
             print("Model repository downloaded successfully.")
         except Exception as e:
             print(f"Failed to download the model repository: {e}")
+        super().run()
 
 def read_file(file_path: str) -> str:
     with open(file_path, 'r', encoding='utf-8') as file:

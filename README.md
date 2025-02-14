@@ -21,7 +21,7 @@ conda activate public-env
 
 To use BCR-V-BERT, you can clone this repository and install the package locally:
 ```bash
-$ git clone https://user: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@github.com/ZhangLabTJU/BCR-V-BERT.git
+$ git clone https://user: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@github.com/ZhangLabTJU/BCR-V-BERT.git
 $ cd BCR-V-BERT/
 $ python setup.py install
 ```
